@@ -1,0 +1,56 @@
+<form [formGroup]="userEntryForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="employee-card">
+    <mat-card-header>
+      <mat-card-title>Employee Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+     
+          <!-- <mat-form-field class="full-width">
+          <input matInput placeholder="Id" formControlName="id">
+          </mat-form-field> -->
+     
+      
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Employee name" formControlName="name" minlength="4">
+          </mat-form-field>
+          <mat-error *ngIf="userEntryForm.controls['name'].hasError('minlength')">
+              Minlength 4 is<strong>required</strong>
+          </mat-error>
+        
+    
+          <mat-form-field class="full-width">
+            <input type="phone" matInput placeholder="Phone" formControlName="phone">
+            <mat-error *ngIf="userEntryForm.controls['phone'].hasError('required')">
+              phone no must be <strong>in number</strong>
+            </mat-error>
+          </mat-form-field>
+          
+          <div formGroupName="address">
+            <h4>Address</h4>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="City" formControlName="city">
+            </mat-form-field>
+    
+      
+            <mat-form-field class="full-width">
+              <textarea matInput placeholder="Address 1"  formControlName="address_line1"></textarea>
+            </mat-form-field>
+  
+            <mat-form-field class="full-width">
+              <textarea matInput placeholder="Address 2"  formControlName="address_line2"></textarea>
+            </mat-form-field>
+  
+            <mat-form-field class="full-width">
+              <textarea matInput placeholder="Postal Code"  formControlName="postal_code"></textarea>
+            </mat-form-field>
+          </div>
+      
+          
+     
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </mat-card-actions>
+    <button mat-button color='warn' (click)="Edit()">Edit</button>
+  </mat-card>
+</form>

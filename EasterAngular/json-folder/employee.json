@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Jhon",
+      "phone": "9999999999",
+      "address": {
+        "city": "Pune",
+        "address_line1": "ABC road",
+        "address_line2": "XYZ building",
+        "postal_code": "12455"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jacob",
+      "address": {
+        "city": "Pune",
+        "address_line1": "PQR road",
+        "address_line2": "ABC building",
+        "postal_code": "13455"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ariasdd",
+      "phone": "145458522",
+      "address": {
+        "city": "Mumbai",
+        "address_line1": "ABC road",
+        "address_line2": "XYZ building",
+        "postal_code": "12455"
+      }
+    },
+    {
+      "id": 4,
+      "name": "ittest",
+      "phone": "45859385",
+      "address": {
+        "city": "test",
+        "address_line1": "test",
+        "address_line2": "test",
+        "postal_code": "123132"
+      }
+    },
+    {
+      "id": 5,
+      "name": "test-abc",
+      "phone": "232132",
+      "address": {
+        "city": "test1",
+        "address_line1": "test2",
+        "address_line2": "test3",
+        "postal_code": "34234234"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Bhoomika",
+      "phone": "2342424",
+      "address": {
+        "city": "test",
+        "address_line1": "test",
+        "address_line2": "test",
+        "postal_code": "79879879"
+      }
+    }
+  ]
+}
