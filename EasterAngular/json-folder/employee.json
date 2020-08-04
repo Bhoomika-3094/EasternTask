@@ -64,6 +64,17 @@
         "address_line2": "test",
         "postal_code": "79879879"
       }
+    },
+    {
+      "id": 7,
+      "name": null,
+      "phone": null,
+      "address": {
+        "city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "postal_code": null
+      }
     }
   ]
 }
